@@ -24,7 +24,7 @@ Usage
 -----
 
 
-```bash
+```
 $ python3 addglyphs.py -h
 usage: addglyphs.py [-h] [--ttx] [--no-ttx] inputfile outputfile
 
