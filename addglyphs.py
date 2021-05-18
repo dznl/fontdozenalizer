@@ -5,7 +5,7 @@ import argparse
 from pprint import pprint as p
 
 parser = argparse.ArgumentParser(
-    description='Add a turned two (U218A) and a turned three (U218B) glyph to the given font.')
+    description='Add a turned two (U218A) and a turned three (U218B) glyph to the given TrueType font.')
 parser.add_argument('inputfile', help='file name of the input font')
 parser.add_argument('outputfile', help='file name of the output font')
 parser.add_argument('--ttx', help='also dump a ttx file of the result', dest='ttx', action='store_true')

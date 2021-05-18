@@ -1,7 +1,10 @@
 Font Dozenalizer
 ================
 
-Add a turned two [(U218A)](https://unicode-table.com/en/218A/) and a turned three [(U218B)](https://unicode-table.com/en/218B) glyph to the given font.
+Add a turned two [(U218A)](https://unicode-table.com/en/218A/) and a turned
+three [(U218B)](https://unicode-table.com/en/218B) glyph to a given TrueType font by
+rotating the existing glyphs for two and three by 180 degrees and adding them at
+the right unicode points.
 
 Installation
 ------------
@@ -28,7 +31,7 @@ Usage
 $ python3 addglyphs.py -h
 usage: addglyphs.py [-h] [--ttx] [--no-ttx] inputfile outputfile
 
-Add a turned two (U218A) and a turned three (U218B) glyph to the given font.
+Add a turned two (U218A) and a turned three (U218B) glyph to the given TrueType font.
 
 positional arguments:
   inputfile   file name of the input font
