@@ -9,13 +9,8 @@ the right unicode points.
 Installation
 ------------
 
-Clone the repository and install the dependencies.
+Clone the repository and then install the dependencies by one of the following ways.
 
-### Virtual environment
-
-```bash
-source setup.sh
-```
 
 ### Global environment
 
@@ -23,9 +18,16 @@ source setup.sh
 python3 -m pip install -r requirements.txt
 ```
 
+### Virtual environment
+
+```bash
+source setup.sh
+```
+
 Usage
 -----
 
+It's a standard Python commandline utility which you can run from any commandline as follows.
 
 ```
 $ python3 addglyphs.py -h
