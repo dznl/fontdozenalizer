@@ -9,16 +9,14 @@ the right unicode points.
 Installation
 ------------
 
-Clone the repository and then install the dependencies by one of the following ways.
-
-
-### Global environment
+Make sure you have [Python 3](https://www.python.org/downloads/) installed on your computer.
+Then clone or download the repository and then install the dependencies by running the following command on a commandline.
 
 ```bash
 python3 -m pip install -r requirements.txt
 ```
 
-### Virtual environment
+Or in case you prefer a dedicated virtual python environment you can do
 
 ```bash
 source setup.sh
@@ -44,4 +42,12 @@ optional arguments:
   --ttx       also dump a ttx file of the result
   --no-ttx
 ```
+
+So for example
+
+```
+$ python3 addglyphs.py Arial.ttf ArialEnriched.ttf
+```
+
+will read an existing file called `Arial.ttf` and produce a new file named `ArialEnriched.ttf` containing the additional dozenal glyphs.
 
