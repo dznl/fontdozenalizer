@@ -10,7 +10,7 @@ Installation
 ------------
 
 Make sure you have [Python 3](https://www.python.org/downloads/) installed on your computer.
-Then clone or download the repository and then install the dependencies by running the following command on a commandline.
+Then clone or download the repository and then install the dependencies by running the following command on a commandline from the root of the repository directory that you have cloned or downloaded.
 
 ```bash
 python3 -m pip install -r requirements.txt
@@ -46,8 +46,8 @@ optional arguments:
 So for example
 
 ```
-$ python3 addglyphs.py Arial.ttf ArialEnriched.ttf
+$ python3 addglyphs.py Arial.ttf ArialDozenalized.ttf
 ```
 
-will read an existing file called `Arial.ttf` and produce a new file named `ArialEnriched.ttf` containing the additional dozenal glyphs.
+will read an existing file called `Arial.ttf` and produce a new file named `ArialDozenalized.ttf` containing the additional dozenal glyphs.
 
