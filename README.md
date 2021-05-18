@@ -1,8 +1,8 @@
 Font Dozenalizer
 ================
 
-Add a turned two [(U218A)](https://unicode-table.com/en/218A/) and a turned
-three [(U218B)](https://unicode-table.com/en/218B) glyph to a given TrueType font by
+Add a ↊ [(turned digit two U218A)](https://unicode-table.com/en/218A/) and a ↋ [(turned digit
+three U218B)](https://unicode-table.com/en/218B) glyph to a given TrueType font by
 rotating the existing glyphs for two and three by 180 degrees and adding them at
 the right unicode points.
 
