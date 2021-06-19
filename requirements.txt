@@ -1,1 +1,2 @@
 fonttools==4.22.1
+brotlipy
