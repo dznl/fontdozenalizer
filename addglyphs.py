@@ -30,7 +30,8 @@ def rotate_glyph(glyph):
 def add_turned_glyph(gs, gvarTable, glyfTable, name):
     turnedname = f'turned{name}'
     gs._hmtx[turnedname] = gs._hmtx[name]
-    gvarTable.variations[turnedname] = gvarTable.variations[name]
+    if gvarTable:
+        gvarTable.variations[turnedname] = gvarTable.variations[name]
 
     orig_glyph = gs[name]._glyph
 
@@ -49,7 +50,10 @@ font = tt.TTFont(args.inputfile)
 cmap = font.getBestCmap()
 gs = font.getGlyphSet()
 
-gvarTable = font['gvar']
+try:
+    gvarTable = font['gvar']
+except KeyError:
+    gvarTable = None
 glyfTable = font['glyf']
 
 add_turned_glyph(gs, gvarTable, glyfTable, 'two')
